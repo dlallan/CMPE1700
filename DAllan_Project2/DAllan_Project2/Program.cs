@@ -10,7 +10,7 @@ namespace DAllan_Project2
     {
     /*********************************************************************************
     *
-    *Input Multiplier
+    *String Multiplier
     *
     *Accepts at least two arguments:
     *   1. Argument 1 is a non-zero positive integer that will become the multiplier.
