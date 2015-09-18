@@ -86,7 +86,7 @@ namespace DAllan_Project2
         {
             Console.WriteLine("Usage: " + System.AppDomain.CurrentDomain.FriendlyName + " <arg1> <args>" +
                                 " where <arg1> is a \npositive integer greater than zero.\nPrints remaining <args> by "
-                                + "the value of <arg>.");
+                                + "the value of <arg1>.");
         }
     }
 }
