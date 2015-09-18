@@ -38,8 +38,6 @@ namespace DAllan_Project2
                 PrintError("Parsing error on argument: \"" + args[0] + "\"", e.Message, true, true, -2);
             }
 
-            if (arg1 < 1) PrintError("Zero is not a permissible input argument", "", true, true, -3);
-
             //Print remaining args by the value of arg1.
             for (int i = 0; i < arg1; i++)
             {
@@ -49,14 +47,6 @@ namespace DAllan_Project2
                 }
                 Console.WriteLine();
             }
-            //DEBUG
-            Console.ReadKey();
-        }
-
-        static void PrintByArg1(uint val) //Prints string by the value of val.
-        {
-            
-
         }
 
         static void PrintError(string Err = "Unknown Failure", string Dbg = "", bool printUsage = true, bool exit = false, int exitVal = 1)
@@ -75,11 +65,7 @@ namespace DAllan_Project2
             Console.BackgroundColor = currBackColor;
             if (printUsage) PrintUsage();
 
-            //DEBUG
-            Console.ReadKey();
-
             if (exit) Environment.Exit(exitVal);
-
         }
 
         static void PrintUsage()

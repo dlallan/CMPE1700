@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
 VisualStudioVersion = 14.0.23107.0
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DAllan_Project2", "DAllan_Project2\DAllan_Project2.csproj", "{61F4848C-ACCA-4BD3-A38F-703BADCC100D}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CMPE1700DAllanICA2", "DAllan_Project2\CMPE1700DAllanICA2.csproj", "{61F4848C-ACCA-4BD3-A38F-703BADCC100D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
