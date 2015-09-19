@@ -10,7 +10,7 @@ namespace DAllan_Project2
     {
     /*********************************************************************************
     *
-    *String Multiplier
+    *Say
     *
     *Accepts at least two arguments:
     *   1. Argument 1 is a positive integer that will become the multiplier.
