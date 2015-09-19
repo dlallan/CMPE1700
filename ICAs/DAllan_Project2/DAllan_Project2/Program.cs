@@ -13,14 +13,15 @@ namespace DAllan_Project2
     *String Multiplier
     *
     *Accepts at least two arguments:
-    *   1. Argument 1 is a non-zero positive integer that will become the multiplier.
+    *   1. Argument 1 is a positive integer that will become the multiplier.
     *
-    *   2. Argument 2+ is a string that will be printed by the value of argument 1.
+    *   2. The other args are strings that will be printed by the value of argument 1.
     *
     **********************************************************************************/
         static void Main(string[] args)
         {
-            uint arg1 = 0; //Value container for arg1.
+            uint arg1 = 0; //Value container for argument 1.
+            
             //Confirm I have at least two arguments.
             if (args.Count() < 2)
             {
@@ -28,7 +29,7 @@ namespace DAllan_Project2
                 PrintError("Invalid number of arguments (" + args.Count() + ")", "", true, true, -1);
             }
 
-            //Confirm arg1 is a non-zero, positive integer.
+            //Confirm arg1 is a valid positive integer.
             try
             {
                 arg1 = uint.Parse(args[0]);
@@ -58,17 +59,18 @@ namespace DAllan_Project2
             Console.Error.WriteLine("Error: " + Err);
             if (Dbg.Length > 0)
             {
-                Console.ForegroundColor = ConsoleColor.Yellow;
+                Console.ForegroundColor = ConsoleColor.Yellow; //Prints debug message in yellow.
                 Console.Error.WriteLine(Dbg);
             }
             Console.ForegroundColor = currForeColor;
             Console.BackgroundColor = currBackColor;
+
             if (printUsage) PrintUsage();
 
             if (exit) Environment.Exit(exitVal);
         }
 
-        static void PrintUsage()
+        static void PrintUsage() //Usage message that describes program function.
         {
             Console.WriteLine("Usage: " + System.AppDomain.CurrentDomain.FriendlyName + " <arg1> <args>" +
                                 " where <arg1> is a \npositive integer greater than zero.\nPrints remaining <args> by "
